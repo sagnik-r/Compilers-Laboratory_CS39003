@@ -1,0 +1,74 @@
+==============================================================================
+Generated Quads for the program
+  0. :t000	=	1
+  1. :if  n <=t000	goto 4
+  2. :goto 6
+  3. :goto 6
+  4. :return	n
+  5. :goto 6
+  6. :t001	=	1
+  7. :t002	=	n - t001
+  8. :param	t002
+  9. :t003	=	call fib, 1
+ 10. :t004	=	2
+ 11. :t005	=	n - t004
+ 12. :param	t005
+ 13. :t006	=	call fib, 1
+ 14. :t007	=	t003 + t006
+ 15. :return	t007
+ 16. :t008	=	9
+ 17. :n	=	t008
+ 18. :param	n
+ 19. :t009	=	call fib, 1
+ 20. :param	t009
+ 21. :t010	=	call printi, 1
+ 22. :t011	=	0
+ 23. :return	t011
+==============================================================================
+Symbol table Maintained For the Given Program
+++++++++++++++++++++++++++++++++++++++++ Global ++++++++++++++++++++++++++++++++++++++++
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printi	null	func		0	-1	ptr-to-St( Global )Int
+readi	null	func		0	-1	ptr-to-St( Global )Int
+prints	null	func		0	-1	ptr-to-St( Global )Int
+fib	null	func		0	-1	ptr-to-St( fib )Int
+main	null	func		0	-1	ptr-to-St( main )Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+++++++++++++++++++++++++++++++++++++++++ fib ++++++++++++++++++++++++++++++++++++++++
+Offset = -36
+Start Quad Index = 0
+End Quad Index =  15
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+n	null	param		4	-4	Int
+t000	1	temp		4	-8	Int
+t001	1	temp		4	-12	Int
+t002	null	temp		4	-16	Int
+t003	null	temp		4	-20	Int
+t004	2	temp		4	-24	Int
+t005	null	temp		4	-28	Int
+t006	null	temp		4	-32	Int
+t007	null	temp		4	-36	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++ main ++++++++++++++++++++++++++++++++++++++++
+Offset = -20
+Start Quad Index = 16
+End Quad Index =  23
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+n	9	local		4	-4	Int
+t008	9	temp		4	-8	Int
+t009	null	temp		4	-12	Int
+t010	null	temp		4	-16	Int
+t011	0	temp		4	-20	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

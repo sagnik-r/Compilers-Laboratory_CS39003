@@ -1,0 +1,199 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: Global			 Parent Name: NULL
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+noParamFunc    int                 -                   4              0              noParamFunc
+main           int                 -                   4              4              main
+----------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: noParamFunc			 Parent Name: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+i              int                 0                   4              4              NULL
+t0             int                 0                   4              8              NULL
+t1             int                 10                  4              12             NULL
+t2             int                                     4              16             NULL
+t3             int                 5                   4              20             NULL
+t4             int                                     4              24             NULL
+t5             int                                     4              28             NULL
+t6             int                                     4              32             NULL
+----------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: main			 Parent Name: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+a              arr(2,arr(3,int))   -                   24             4              NULL
+t0             int                 2                   4              28             NULL
+t1             int                 3                   4              32             NULL
+i              int                 -                   4              36             NULL
+j              int                 -                   4              40             NULL
+k              int                 -                   4              44             NULL
+t2             int                 0                   4              48             NULL
+t3             int                                     4              52             NULL
+t4             int                 1                   4              56             NULL
+t5             int                                     4              60             NULL
+t6             int                 0                   4              64             NULL
+t7             int                                     4              68             NULL
+t8             int                 0                   4              72             NULL
+t9             int                                     4              76             NULL
+t10            int                 3                   4              80             NULL
+t11            int                                     4              84             NULL
+t12            int                                     4              88             NULL
+t13            int                                     4              92             NULL
+t14            int                                     4              96             NULL
+t15            int                                     4              100            NULL
+t16            int                                     4              104            NULL
+t17            int                                     4              108            NULL
+t18            int                                     4              112            NULL
+t19            int                                     4              116            NULL
+t20            int                 1                   4              120            NULL
+t21            int                                     4              124            NULL
+t22            int                 2                   4              128            NULL
+t23            int                                     4              132            NULL
+t24            int                                     4              136            NULL
+t25            int                                     4              140            NULL
+t26            int                                     4              144            NULL
+t27            int                                     4              148            NULL
+y              int                 -                   4              152            NULL
+noParamFunc    int                 -                   4              156            NULL
+t28            int                                     4              160            NULL
+t29            int                                     4              164            NULL
+t30            int                 0                   4              168            NULL
+----------------------------------------------------------------------------------------------------
+
+__________________________________________________
+Three Address Code: 
+__________________________________________________
+
+L0: noParamFunc: 
+
+L1:     t0 = 0
+
+L2:     i = t0
+
+L3:     i = i + 1
+
+L4:     t1 = 10
+
+L5:     t2 = i + t1
+
+L6:     t3 = 5
+
+L7:     t4 = t2 ^ t3
+
+L8:     i = t4
+
+L9:     t6 = i
+
+L10:     i = i - 1
+
+L11:     return i
+
+
+L12: main: 
+
+L13:     t0 = 2
+
+L14:     t1 = 3
+
+L15:     t2 = 0
+
+L16:     k = t2
+
+L17:     t4 = 1
+
+L18:     i = t4
+
+L19:     t6 = 0
+
+L20:     if i >= t6 goto 25
+
+L21:     goto 44
+
+L22:     t7 = i
+
+L23:     i = i - 1
+
+L24:     goto 19
+
+L25:     t8 = 0
+
+L26:     j = t8
+
+L27:     t10 = 3
+
+L28:     if j < t10 goto 33
+
+L29:     goto 22
+
+L30:     t11 = j
+
+L31:     j = j + 1
+
+L32:     goto 27
+
+L33:     t12 = k
+
+L34:     k = k + 1
+
+L35:     t13 = i * 12
+
+L36:     t15 = j * 4
+
+L37:     t14 = t13 + t15
+
+L38:     t16 = i + j
+
+L39:     a[t14] = t16
+
+L40:     t18 = k
+
+L41:     k = k + 1
+
+L42:     goto 30
+
+L43:     goto 22
+
+L44:     t19 = k
+
+L45:     k = k + 1
+
+L46:     t20 = 1
+
+L47:     t21 = t20 * 12
+
+L48:     t22 = 2
+
+L49:     t24 = t22 * 4
+
+L50:     t23 = t21 + t24
+
+L51:     t25 = a[t23]
+
+L52:     k = t25
+
+L53:     t27 = k
+
+L54:     k = k + 1
+
+L55:     t28 = call noParamFunc, 0
+
+L56:     y = t28
+
+L57:     t29 = k
+
+L58:     k = k + 1
+
+L59:     t30 = 0
+
+L60:     return t30
+
+__________________________________________________

@@ -1,0 +1,149 @@
+==============================================================================
+Generated Quads for the program
+  0. :t000	=	0
+  1. :t001	=	0
+  2. :t003	=	t001 * 4
+  3. :t002	=	t000 + t003
+  4. :t004	=	a[t002]
+  5. :max	=	t004
+  6. :t005	=	t004
+  7. :t006	=	1
+  8. :i	=	t006
+  9. :t007	=	t006
+ 10. :if  i <n	goto 16
+ 11. :goto 31
+ 12. :goto 31
+ 13. :t008	=	i
+ 14. :i	=	i + 1
+ 15. :goto 10
+ 16. :t009	=	0
+ 17. :t011	=	i * 4
+ 18. :t010	=	t009 + t011
+ 19. :t012	=	a[t010]
+ 20. :if  max <t012	goto 23
+ 21. :goto 13
+ 22. :goto 30
+ 23. :t013	=	0
+ 24. :t015	=	i * 4
+ 25. :t014	=	t013 + t015
+ 26. :t016	=	a[t014]
+ 27. :max	=	t016
+ 28. :t017	=	t016
+ 29. :goto 13
+ 30. :goto 13
+ 31. :return	max
+ 32. :t018	=	100
+ 33. :param	_0
+ 34. :t019	=	call prints, 1
+ 35. :t020	=	& scan
+ 36. :param	t020
+ 37. :t021	=	call readi, 1
+ 38. :n	=	t021
+ 39. :t022	=	t021
+ 40. :t023	=	0
+ 41. :i	=	t023
+ 42. :t024	=	t023
+ 43. :if  i <n	goto 49
+ 44. :goto 60
+ 45. :goto 60
+ 46. :t025	=	i
+ 47. :i	=	i + 1
+ 48. :goto 43
+ 49. :param	_1
+ 50. :t026	=	call prints, 1
+ 51. :t027	=	0
+ 52. :t029	=	i * 4
+ 53. :t028	=	t027 + t029
+ 54. :t030	=	& scan
+ 55. :param	t030
+ 56. :t031	=	call readi, 1
+ 57. :a[t028]	=	t031
+ 58. :t032	=	t031
+ 59. :goto 46
+ 60. :param	_2
+ 61. :t033	=	call prints, 1
+ 62. :t034	=	0
+ 63. :param	a
+ 64. :param	n
+ 65. :t035	=	call max, 2
+ 66. :param	t035
+ 67. :t036	=	call printi, 1
+==============================================================================
+Symbol table Maintained For the Given Program
+++++++++++++++++++++++++++++++++++++++++ Global ++++++++++++++++++++++++++++++++++++++++
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printi	null	func		0	-1	ptr-to-St( Global )Int
+readi	null	func		0	-1	ptr-to-St( Global )Int
+prints	null	func		0	-1	ptr-to-St( Global )Int
+max	null	func		0	-1	ptr-to-St( max )Int
+main	null	func		0	-1	ptr-to-St( main )Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+++++++++++++++++++++++++++++++++++++++++ max ++++++++++++++++++++++++++++++++++++++++
+Offset = -92
+Start Quad Index = 0
+End Quad Index =  31
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+a	null	param		8	-12	arr1(-1,Int)
+n	null	param		4	-4	Int
+i	null	local		4	-16	Int
+max	null	local		4	-20	Int
+t000	0	temp		4	-24	Int
+t001	0	temp		4	-28	Int
+t002	null	temp		4	-32	Int
+t003	null	temp		4	-36	Int
+t004	null	temp		4	-40	Int
+t005	null	temp		4	-44	Int
+t006	1	temp		4	-48	Int
+t007	null	temp		4	-52	Int
+t008	null	temp		4	-56	Int
+t009	0	temp		4	-60	Int
+t010	null	temp		4	-64	Int
+t011	null	temp		4	-68	Int
+t012	null	temp		4	-72	Int
+t013	0	temp		4	-76	Int
+t014	null	temp		4	-80	Int
+t015	null	temp		4	-84	Int
+t016	null	temp		4	-88	Int
+t017	null	temp		4	-92	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++ main ++++++++++++++++++++++++++++++++++++++++
+Offset = -496
+Start Quad Index = 32
+End Quad Index =  67
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+a	null	local		400	-400	arr1(100,Int)
+t018	100	temp		4	-404	Int
+i	null	local		4	-408	Int
+n	null	local		4	-412	Int
+scan	null	local		4	-416	Int
+t019	null	temp		4	-420	Int
+t020	null	temp		8	-428	ptr(Int)
+t021	null	temp		4	-432	Int
+t022	null	temp		4	-436	Int
+t023	0	temp		4	-440	Int
+t024	null	temp		4	-444	Int
+t025	null	temp		4	-448	Int
+t026	null	temp		4	-452	Int
+t027	0	temp		4	-456	Int
+t028	null	temp		4	-460	Int
+t029	null	temp		4	-464	Int
+t030	null	temp		8	-472	ptr(Int)
+t031	null	temp		4	-476	Int
+t032	null	temp		4	-480	Int
+t033	null	temp		4	-484	Int
+t034	0	temp		4	-488	Int
+t035	null	temp		4	-492	Int
+t036	null	temp		4	-496	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

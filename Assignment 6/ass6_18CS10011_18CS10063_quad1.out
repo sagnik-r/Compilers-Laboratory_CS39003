@@ -1,0 +1,145 @@
+==============================================================================
+Generated Quads for the program
+  0. :param	_0
+  1. :t000	=	call prints, 1
+  2. :t001	=	& scan
+  3. :param	t001
+  4. :t002	=	call readi, 1
+  5. :a	=	t002
+  6. :t003	=	t002
+  7. :param	_1
+  8. :t004	=	call prints, 1
+  9. :t005	=	& scan
+ 10. :param	t005
+ 11. :t006	=	call readi, 1
+ 12. :b	=	t006
+ 13. :t007	=	t006
+ 14. :param	_2
+ 15. :t008	=	call prints, 1
+ 16. :t009	=	& scan
+ 17. :param	t009
+ 18. :t010	=	call readi, 1
+ 19. :c	=	t010
+ 20. :t011	=	t010
+ 21. :if  a <b	goto 24
+ 22. :goto 34
+ 23. :goto 44
+ 24. :if  a <c	goto 27
+ 25. :goto 30
+ 26. :goto 33
+ 27. :min	=	a
+ 28. :t012	=	a
+ 29. :goto 44
+ 30. :min	=	c
+ 31. :t013	=	c
+ 32. :goto 44
+ 33. :goto 44
+ 34. :if  b <c	goto 37
+ 35. :goto 40
+ 36. :goto 43
+ 37. :min	=	b
+ 38. :t014	=	b
+ 39. :goto 44
+ 40. :min	=	c
+ 41. :t015	=	c
+ 42. :goto 44
+ 43. :goto 44
+ 44. :if  a >b	goto 47
+ 45. :goto 57
+ 46. :goto 67
+ 47. :if  a >c	goto 50
+ 48. :goto 53
+ 49. :goto 56
+ 50. :max	=	a
+ 51. :t016	=	a
+ 52. :goto 67
+ 53. :max	=	c
+ 54. :t017	=	c
+ 55. :goto 67
+ 56. :goto 67
+ 57. :if  b >c	goto 60
+ 58. :goto 63
+ 59. :goto 66
+ 60. :max	=	b
+ 61. :t018	=	b
+ 62. :goto 67
+ 63. :max	=	c
+ 64. :t019	=	c
+ 65. :goto 67
+ 66. :goto 67
+ 67. :t020	=	a + b
+ 68. :t021	=	t020 + c
+ 69. :sum	=	t021
+ 70. :t022	=	t021
+ 71. :param	_3
+ 72. :t023	=	call prints, 1
+ 73. :param	min
+ 74. :t024	=	call printi, 1
+ 75. :param	_4
+ 76. :t025	=	call prints, 1
+ 77. :param	max
+ 78. :t026	=	call printi, 1
+ 79. :param	_5
+ 80. :t027	=	call prints, 1
+ 81. :param	sum
+ 82. :t028	=	call printi, 1
+==============================================================================
+Symbol table Maintained For the Given Program
+++++++++++++++++++++++++++++++++++++++++ Global ++++++++++++++++++++++++++++++++++++++++
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printi	null	func		0	-1	ptr-to-St( Global )Int
+readi	null	func		0	-1	ptr-to-St( Global )Int
+prints	null	func		0	-1	ptr-to-St( Global )Int
+main	null	func		0	-1	ptr-to-St( main )Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+++++++++++++++++++++++++++++++++++++++++ main ++++++++++++++++++++++++++++++++++++++++
+Offset = -156
+Start Quad Index = 0
+End Quad Index =  82
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+a	null	local		4	-4	Int
+b	null	local		4	-8	Int
+c	null	local		4	-12	Int
+scan	null	local		4	-16	Int
+min	null	local		4	-20	Int
+max	null	local		4	-24	Int
+sum	null	local		4	-28	Int
+t000	null	temp		4	-32	Int
+t001	null	temp		8	-40	ptr(Int)
+t002	null	temp		4	-44	Int
+t003	null	temp		4	-48	Int
+t004	null	temp		4	-52	Int
+t005	null	temp		8	-60	ptr(Int)
+t006	null	temp		4	-64	Int
+t007	null	temp		4	-68	Int
+t008	null	temp		4	-72	Int
+t009	null	temp		8	-80	ptr(Int)
+t010	null	temp		4	-84	Int
+t011	null	temp		4	-88	Int
+t012	null	temp		4	-92	Int
+t013	null	temp		4	-96	Int
+t014	null	temp		4	-100	Int
+t015	null	temp		4	-104	Int
+t016	null	temp		4	-108	Int
+t017	null	temp		4	-112	Int
+t018	null	temp		4	-116	Int
+t019	null	temp		4	-120	Int
+t020	null	temp		4	-124	Int
+t021	null	temp		4	-128	Int
+t022	null	temp		4	-132	Int
+t023	null	temp		4	-136	Int
+t024	null	temp		4	-140	Int
+t025	null	temp		4	-144	Int
+t026	null	temp		4	-148	Int
+t027	null	temp		4	-152	Int
+t028	null	temp		4	-156	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

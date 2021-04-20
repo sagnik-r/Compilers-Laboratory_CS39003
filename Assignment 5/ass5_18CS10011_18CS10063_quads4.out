@@ -1,0 +1,210 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: Global			 Parent Name: NULL
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+test1          int                 -                   4              0              test1
+main           int                 -                   4              4              main
+----------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: test1			 Parent Name: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+c              ptr(char)           -                   4              0              NULL
+a              int                 -                   4              4              NULL
+b              int                 -                   4              8              NULL
+return         int                 -                   4              12             NULL
+t0             int                 1                   4              16             NULL
+----------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: main			 Parent Name: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+i              int                 10                  4              4              NULL
+t0             int                 10                  4              8              NULL
+p              ptr(int)            -                   4              12             NULL
+t1             ptr(int)                                4              16             NULL
+t2             int                                     4              20             NULL
+t3             int                                     4              24             NULL
+t4             int                                     4              28             NULL
+t5             int                 2                   4              32             NULL
+t6             int                                     4              36             NULL
+t7             int                                     4              40             NULL
+j              int                 5                   4              44             NULL
+t8             int                 5                   4              48             NULL
+t9             ptr(int)                                4              52             NULL
+t10            ptr(null)                               4              56             NULL
+t11            int                                     4              60             NULL
+t12            int                 1                   4              64             NULL
+t13            int                                     4              68             NULL
+t14            int                                     4              72             NULL
+t15            int                                     4              76             NULL
+t16            int                                     4              80             NULL
+t17            int                 1                   4              84             NULL
+t18            int                                     4              88             NULL
+t19            int                                     4              92             NULL
+t20            int                                     4              96             NULL
+t21            int                                     4              100            NULL
+t22            int                                     4              104            NULL
+t23            int                                     4              108            NULL
+t24            int                 3                   4              112            NULL
+t25            int                                     4              116            NULL
+t26            int                                     4              120            NULL
+t27            int                                     4              124            NULL
+a1             int                 10                  4              128            NULL
+a2             int                 -                   4              132            NULL
+t28            int                 5                   4              136            NULL
+t29            int                                     4              140            NULL
+t30            int                                     4              144            NULL
+s              arr(100,char)       "The values are:"   100            148            NULL
+t31            int                 100                 4              248            NULL
+t32            ptr(char)           "The values are:"   4              252            NULL
+test1          int                 -                   4              256            NULL
+t33            int                                     4              260            NULL
+t34            int                                     4              264            NULL
+----------------------------------------------------------------------------------------------------
+
+__________________________________________________
+Three Address Code: 
+__________________________________________________
+
+L0: test1: 
+
+L1:     t0 = 1
+
+L2:     return t0
+
+
+L3: main: 
+
+L4:     t0 = 10
+
+L5:     i = t0
+
+L6:     t1 = &i
+
+L7:     p = t1
+
+L8:     t2 = i
+
+L9:     i = i + 1
+
+L10:     t3 = *p
+
+L11:     t4 = *p
+
+L12:     t5 = 2
+
+L13:     t6 = t4 / t5
+
+L14:     *p = t6
+
+L15:     t7 = i
+
+L16:     i = i + 1
+
+L17:     t8 = 5
+
+L18:     j = t8
+
+L19:     t9 = &j
+
+L20:     p = t9
+
+L21:     t11 = i
+
+L22:     i = i + 1
+
+L23:     t12 = 1
+
+L24:     t13 = j >> t12
+
+L25:     j = t13
+
+L26:     t15 = *p
+
+L27:     t16 = *p
+
+L28:     t17 = 1
+
+L29:     t18 = t16 - t17
+
+L30:     *p = t18
+
+L31:     t19 = i
+
+L32:     i = i + 1
+
+L33:     t20 = *p
+
+L34:     if i == t20 goto 37
+
+L35:     goto 40
+
+L36:     goto 40
+
+L37:     t21 = i
+
+L38:     i = i + 1
+
+L39:     goto 40
+
+L40:     t22 = *p
+
+L41:     if j == t22 goto 44
+
+L42:     goto 47
+
+L43:     goto 50
+
+L44:     t23 = j
+
+L45:     j = j - 1
+
+L46:     goto 50
+
+L47:     t24 = 3
+
+L48:     t25 = j + t24
+
+L49:     i = t25
+
+L50:     t27 = i
+
+L51:     i = i + 1
+
+L52:     a1 = i
+
+L53:     t28 = 5
+
+L54:     t29 = j % t28
+
+L55:     a2 = t29
+
+L56:     t30 = i
+
+L57:     i = i + 1
+
+L58:     t31 = 100
+
+L59:     s = t32
+
+L60:     param s
+
+L61:     param a1
+
+L62:     param a2
+
+L63:     t33 = call test1, 3
+
+L64:     t34 = i
+
+L65:     i = i + 1
+
+__________________________________________________

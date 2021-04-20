@@ -1,0 +1,115 @@
+==============================================================================
+Generated Quads for the program
+  0. :t000	=	1
+  1. :a	=	t000
+  2. :t001	=	& a
+  3. :b	=	t001
+  4. :t002	=	t001
+  5. :t003	=	* b
+  6. :t004	=	100
+  7. :t005	=	t003 + t004
+  8. :*b	=	t005
+  9. :t006	=	t005
+ 10. :param	a
+ 11. :t007	=	call printi, 1
+ 12. :param	_0
+ 13. :t008	=	call prints, 1
+ 14. :t009	=	10
+ 15. :t010	=	0
+ 16. :i	=	t010
+ 17. :t011	=	t010
+ 18. :t012	=	10
+ 19. :if  i <t012	goto 25
+ 20. :goto 33
+ 21. :goto 33
+ 22. :t013	=	i
+ 23. :i	=	i + 1
+ 24. :goto 18
+ 25. :t014	=	0
+ 26. :t016	=	i * 4
+ 27. :t015	=	t014 + t016
+ 28. :t017	=	10
+ 29. :t018	=	i * t017
+ 30. :c[t015]	=	t018
+ 31. :t019	=	t018
+ 32. :goto 22
+ 33. :param	_1
+ 34. :t020	=	call prints, 1
+ 35. :t021	=	0
+ 36. :i	=	t021
+ 37. :t022	=	t021
+ 38. :t023	=	10
+ 39. :if  i <t023	goto 45
+ 40. :goto -1
+ 41. :goto 54
+ 42. :t024	=	i
+ 43. :i	=	i + 1
+ 44. :goto 38
+ 45. :param	_2
+ 46. :t025	=	call prints, 1
+ 47. :t026	=	0
+ 48. :t028	=	i * 4
+ 49. :t027	=	t026 + t028
+ 50. :t029	=	c[t027]
+ 51. :param	t029
+ 52. :t030	=	call printi, 1
+ 53. :goto 42
+==============================================================================
+Symbol table Maintained For the Given Program
+++++++++++++++++++++++++++++++++++++++++ Global ++++++++++++++++++++++++++++++++++++++++
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printi	null	func		0	-1	ptr-to-St( Global )Int
+readi	null	func		0	-1	ptr-to-St( Global )Int
+prints	null	func		0	-1	ptr-to-St( Global )Int
+main	null	func		0	-1	ptr-to-St( main )Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+++++++++++++++++++++++++++++++++++++++++ main ++++++++++++++++++++++++++++++++++++++++
+Offset = -176
+Start Quad Index = 0
+End Quad Index =  53
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+b	null	local		8	-8	ptr(Int)
+a	1	local		4	-12	Int
+t000	1	temp		4	-16	Int
+t001	null	temp		8	-24	ptr(Int)
+t002	null	temp		8	-32	ptr(Int)
+t003	null	temp		4	-36	Int
+t004	100	temp		4	-40	Int
+t005	null	temp		4	-44	Int
+t006	null	temp		4	-48	Int
+t007	null	temp		4	-52	Int
+t008	null	temp		4	-56	Int
+c	null	local		40	-96	arr1(10,Int)
+t009	10	temp		4	-100	Int
+i	null			0	-100	
+t010	0	temp		4	-104	Int
+t011	null	temp		4	-108	Int
+t012	10	temp		4	-112	Int
+t013	null	temp		0	-112	
+t014	0	temp		4	-116	Int
+t015	null	temp		4	-120	Int
+t016	null	temp		4	-124	Int
+t017	10	temp		4	-128	Int
+t018	null	temp		4	-132	Int
+t019	null	temp		4	-136	Int
+t020	null	temp		4	-140	Int
+t021	0	temp		4	-144	Int
+t022	null	temp		4	-148	Int
+t023	10	temp		4	-152	Int
+t024	null	temp		0	-152	
+t025	null	temp		4	-156	Int
+t026	0	temp		4	-160	Int
+t027	null	temp		4	-164	Int
+t028	null	temp		4	-168	Int
+t029	null	temp		4	-172	Int
+t030	null	temp		4	-176	Int
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

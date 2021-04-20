@@ -1,0 +1,237 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: Global			 Parent Name: NULL
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+main           int                 -                   4              0              main
+----------------------------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table Name: main			 Parent Name: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+k              int                 0                   4              4              NULL
+t0             int                 0                   4              8              NULL
+a              float               2.3                 8              12             NULL
+t1             float               2.3                 8              20             NULL
+b              int                 -                   4              28             NULL
+t2             int                                     4              32             NULL
+c              int                 2                   4              36             NULL
+t3             int                 2                   4              40             NULL
+t4             int                                     4              44             NULL
+t5             int                                     4              48             NULL
+t6             int                                     4              52             NULL
+t7             int                                     4              56             NULL
+t8             int                                     4              60             NULL
+t9             float                                   8              64             NULL
+t10            float                                   8              72             NULL
+t11            int                                     4              80             NULL
+t12            int                                     4              84             NULL
+t              int                 -                   4              88             NULL
+t13            int                 5                   4              92             NULL
+t14            int                                     4              96             NULL
+t15            int                                     4              100            NULL
+u              int                 -                   4              104            NULL
+t16            int                                     4              108            NULL
+v              int                 -                   4              112            NULL
+t17            int                                     4              116            NULL
+t18            int                                     4              120            NULL
+t19            int                                     4              124            NULL
+t20            int                 100                 4              128            NULL
+t21            int                                     4              132            NULL
+t22            int                                     4              136            NULL
+t23            int                                     4              140            NULL
+t24            int                 100                 4              144            NULL
+t25            int                 3                   4              148            NULL
+t26            int                 0                   4              152            NULL
+t27            int                                     4              156            NULL
+t28            int                 1                   4              160            NULL
+t29            int                                     4              164            NULL
+t30            int                                     4              168            NULL
+s              int                 -                   4              172            NULL
+t31            int                 100                 4              176            NULL
+t32            int                 1                   4              180            NULL
+t33            int                 0                   4              184            NULL
+t34            int                                     4              188            NULL
+t35            int                                     4              192            NULL
+t36            int                                     4              196            NULL
+r              char                'a'                 1              200            NULL
+t37            char                'a'                 1              201            NULL
+r1             char                'c'                 1              202            NULL
+t38            char                'c'                 1              203            NULL
+q              int                 30                  4              204            NULL
+t39            int                 30                  4              208            NULL
+t40            int                                     4              212            NULL
+t41            int                                     4              216            NULL
+t42            int                                     4              220            NULL
+t43            char                                    1              224            NULL
+----------------------------------------------------------------------------------------------------
+
+__________________________________________________
+Three Address Code: 
+__________________________________________________
+
+L0: main: 
+
+L1:     t0 = 0
+
+L2:     k = t0
+
+L3:     t1 = 2.3
+
+L4:     a = t1
+
+L5:     t2 = k
+
+L6:     k = k + 1
+
+L7:     t3 = 2
+
+L8:     c = t3
+
+L9:     t4 = float2int(a)
+
+L10:     t5 = t4 + c
+
+L11:     b = t5
+
+L12:     t7 = k
+
+L13:     k = k + 1
+
+L14:     t8 = c
+
+L15:     c = c - 1
+
+L16:     t9 = int2float(b)
+
+L17:     t10 = t9 * a
+
+L18:     t11 = float2int(t10)
+
+L19:     b = t11
+
+L20:     t12 = k
+
+L21:     k = k + 1
+
+L22:     t13 = 5
+
+L23:     t14 = b + t13
+
+L24:     t15 = -t14
+
+L25:     t = t15
+
+L26:     t16 = ~b
+
+L27:     u = t16
+
+L28:     t17 = !b
+
+L29:     v = t17
+
+L30:     t18 = k
+
+L31:     k = k + 1
+
+L32:     t19 = b % c
+
+L33:     t20 = 100
+
+L34:     t21 = t19 + t20
+
+L35:     b = t21
+
+L36:     t23 = k
+
+L37:     k = k + 1
+
+L38:     t24 = 100
+
+L39:     if b == t24 goto 42
+
+L40:     goto 52
+
+L41:     goto 52
+
+L42:     t25 = 3
+
+L43:     if c != t25 goto 46
+
+L44:     goto 49
+
+L45:     goto 51
+
+L46:     t26 = 0
+
+L47:     c = t26
+
+L48:     goto 52
+
+L49:     t28 = 1
+
+L50:     c = t28
+
+L51:     goto 52
+
+L52:     t30 = k
+
+L53:     k = k + 1
+
+L54:     t31 = 100
+
+L55:     if b > t31 goto 58
+
+L56:     goto 60
+
+L57:     goto 65
+
+L58:     t32 = 1
+
+L59:     goto 63
+
+L60:     t33 = 0
+
+L61:     t34 = t33
+
+L62:     goto 65
+
+L63:     t34 = t32
+
+L64:     goto 65
+
+L65:     s = t34
+
+L66:     t36 = k
+
+L67:     k = k + 1
+
+L68:     t37 = 'a'
+
+L69:     r = t37
+
+L70:     t38 = 'c'
+
+L71:     r1 = t38
+
+L72:     t39 = 30
+
+L73:     q = t39
+
+L74:     t40 = k
+
+L75:     k = k + 1
+
+L76:     t41 = char2int(r)
+
+L77:     t42 = t41 - q
+
+L78:     t43 = int2char(t42)
+
+L79:     r = t43
+
+__________________________________________________
